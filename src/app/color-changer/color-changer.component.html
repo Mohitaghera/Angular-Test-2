@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="color-changer-div" #divContent>{{ content }}</div>
+  <div class="fields">
+    <div>
+      <label for="textColorInput">Text Color: </label>
+      <input
+        type="color"
+        class="color-input"
+        id="textColorInput"
+        (change)="changeTextColor($event)"
+      />
+    </div>
+    <div>
+      <label for="bgColorInput">Backgroung Color: </label>
+      <input
+        type="color"
+        class="bg-color-input"
+        id="bgColorInput"
+        (change)="changeBgColor($event)"
+      />
+    </div>
+  </div>
+</div>
